@@ -1,8 +1,9 @@
 {
   "name": "repcase",
+  "publisher": "kitamula",
   "displayName": "Repcase",
   "description": "Save and load replace rules.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -18,11 +19,13 @@
     "commands": [
       {
         "command": "repcase.helloWorld",
-        "title": "Hello World"
+        "title": "Hello World",
+        "category": "Repcase"
       },
       {
         "command": "repcase.commonToAsset",
-        "title": "Replace common to asset"
+        "title": "Replace common to asset",
+        "category": "Repcase"
       }
     ]
   },
