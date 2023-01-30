@@ -34,11 +34,11 @@ function replaceAll(pattern, replacement, editor = null){
 		editor = vscode.window.activeTextEditor;
 	}
 
-	new RegExp(pattern,'g');
+	let petternGlobal = new RegExp(pattern,'g');
 	if(editor) {
 		const document = editor.document;
 		var text = document.getText();
-		var textReplaced = text.replace(pattern, replacement);
+		var textReplaced = text.replace(petternGlobal, replacement);
 
 		const range = new vscode.Range(0, 0, editor.document.lineCount + 1, 0);
 		editor.edit(editBuilder => {

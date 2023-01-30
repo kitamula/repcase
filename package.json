@@ -3,7 +3,7 @@
   "publisher": "kitamula",
   "displayName": "Repcase",
   "description": "Save and load replace rules.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -24,7 +24,7 @@
       },
       {
         "command": "repcase.commonToAsset",
-        "title": "Replace common to asset",
+        "title": "Replace \"./common/***\" to \"{{ asset(***) }}\"",
         "category": "Repcase"
       }
     ]
