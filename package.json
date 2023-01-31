@@ -3,7 +3,7 @@
   "publisher": "kitamula",
   "displayName": "Repcase",
   "description": "Save and load replace rules.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -12,7 +12,8 @@
   ],
   "activationEvents": [
     "onCommand:repcase.helloWorld",
-    "onCommand:repcase.commonToAsset"
+    "onCommand:repcase.commonToAsset",
+    "onCommand:repcase.pathToRoute"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -24,6 +25,11 @@
       },
       {
         "command": "repcase.commonToAsset",
+        "title": "Replace \"./common/***\" to \"{{ asset(***) }}\"",
+        "category": "Repcase"
+      },
+      {
+        "command": "repcase.pathToRoute",
         "title": "Replace \"./common/***\" to \"{{ asset(***) }}\"",
         "category": "Repcase"
       }
